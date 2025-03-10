@@ -36,8 +36,8 @@ Before installing Docker, make sure your computer meets the requirements:
 This Docker Desktop installation requires **WSL 2**, but since it's not always installed by default, in this guide we will show how to install it.
 
 ### **Step 1: Open PowerShell as Administrator**
-1. Press `Win + S` and search for **PowerShell** or **Terminal**. At this point right-click with the mouse and select *run as Administrator* ("Esegui come amministratore" in italian).  
-![image](./images/powershell-wsl.png)
+1. Press `Win + S` and search for **PowerShell** or **Terminal**. At this point right-click with the mouse and select *run as Administrator* 
+
 2. Run this command to install WSL:
    ```powershell
    wsl --install
@@ -61,7 +61,6 @@ Now that WSL is set up, let's install Docker.
 ### **Step 1: Download Docker Desktop**
 1. Go to [Docker's official website](https://www.docker.com/products/docker-desktop/).
 2. Click **Download for Windows**.
-![image](./images/docker-desktop-download.png)
 3. Run the **Docker Desktop Installer.exe** file.
 
 ### **Step 2: Install Docker**
@@ -91,7 +90,7 @@ If you see the error message `'docker' is not recognized as an internal or exter
 1. **Reboot Your System:** Sometimes a simple system restart can resolve environment path issues or finalize Docker installation.
 
 2. **Ensure Docker Desktop is Running:** If you haven't opened Docker Desktop before running Docker commands, the Docker Engine might not be running. Open Docker Desktop and ensure it is properly started. The Docker CLI won't work if the engine isn't running.  
-   ![image](./images/docker-engine-not-running.png)
+  
 
 3. **Verify Docker Installation Path:** Ensure that Docker's installation path is correctly added to your system's **PATH** environment variable. If the path is missing, the terminal won't recognize the `docker` command. You can add it manually by adding the Docker's path to the **PATH** variable ![image](./images/docker-path.png).
 
@@ -109,9 +108,9 @@ Now let's download and run an **AlmaLinux 9** container! This is the step where 
 ### **Step 1: Open Terminal inside Docker Desktop**
 **Disclaimer**: We could have used **PowerShell** or **Windows Terminal** to run the following commands, but we will use the **Terminal** inside Docker Desktop to make it easier to understand since it's the first time we open it.
 
-1. **Open Docker Desktop**: Make sure Docker Desktop is running. You should see the Docker icon in your system tray (bottom-right corner of your screen for Windows). If Docker Desktop is not open, click the icon to launch it. ![image](./images/system-tray-win.png)
+1. **Open Docker Desktop**: Make sure Docker Desktop is running. You should see the Docker icon in your system tray (bottom-right corner of your screen for Windows). If Docker Desktop is not open, click the icon to launch it. 
 2. **Enable the Docker Terminal**: In Docker Desktop, click on the terminal icon located in the top-right corner of the Docker Desktop window. This icon looks like a small computer terminal. Once you click on it, a terminal window will open, allowing you to enter commands directly.
-![image](./images/docker-terminal.png)
+
 3. Pull the AlmaLinux 9 Image: In the terminal window, type the following command to pull the AlmaLinux 9 image from Docker Hub:
    ```bash
    docker pull almalinux:9
@@ -126,7 +125,7 @@ Now let's download and run an **AlmaLinux 9** container! This is the step where 
    Status: Downloaded newer image for almalinux:latest
    ```
    And in the Docker Desktop interface, you should see the image being downloaded in the "Images" tab.
-   ![image](./images/docker-desktop-almalinux-downloading.png)
+
 
 ### **Step 2: Run the AlmaLinux Container**
 To start a new AlmaLinux 9 container run the following command:
@@ -146,7 +145,7 @@ NAME="AlmaLinux"
 VERSION="9.x"
 ```
 which means that we are working inside an AlmaLinux 9 container.
-![image](./images/alma-container.png)
+
 
 ### **Step 3: Exit the Container**
 To exit the AlmaLinux container, type:
