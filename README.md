@@ -1,28 +1,22 @@
-# **How to Install Docker on Windows with WSL 2 and Run an AlmaLinux 9 Container**
+# **Install Docker on AlmaLinux9**
 ---
 
 # **1. Introduction**  
-[Docker](https://www.docker.com/) is a powerful tool that allows you to **run applications inside containers**, which are lightweight, portable environments that include everything an application needs to work. This makes software installation and deployment much easier and more reliable.  
+Docker is a powerful tool that allows you to run applications inside **containers**, which are lightweight, portable environments that include everything an application needs to work. This makes software installation and deployment much easier and more reliable.  
 
-Since Docker requires **a Linux-based system** to function properly, installing it on Windows requires setting up a **Linux-compatible environment**. There are two ways to achieve this:
-1. **Hyper-V:** A built-in virtualization technology in Windows that runs a full Linux virtual machine (VM) to host Docker.  
-2. **WSL 2:** A lightweight Linux compatibility layer that allows running Linux distributions natively inside Windows, with full access to the Windows filesystem and better resource efficiency. 
+Since Docker requires **a Linux-based system** to function properly, installing it on Windows requires setting up a **Linux-compatible environment**. I followed the **WSL 2** method
+**WSL 2 Method:** A lightweight Linux compatibility layer that allows running Linux distributions natively inside Windows, with full access to the Windows filesystem and better resource efficiency. 
 
-While both methods work, this guide focuses on **WSL 2** because it offers better compatibility and flexibility for most users.
+While there is another methods that also work well but this guide focuses on **WSL 2** because it offers better compatibility and flexibility for most users even on older version of windows as well.
 
-## **1.1 Why Choose WSL 2 Over Hyper-V?**  
-While **Hyper-V is a great option**, we use **WSL 2** in this guide because:  
-* **Better Performance**: WSL 2 runs with a lightweight virtual machine that is faster and uses fewer resources compared to Hyper-V.  
-* **More Compatibility**: WSL 2 allows you to use Docker alongside other virtualization tools like VirtualBox, which Hyper-V often conflicts with.  
+## **1.1 Why WSL 2? **  
+* **Good Performance**: WSL 2 runs with a lightweight virtual machine that is faster and uses fewer resources.   
+* **Compatibility**: WSL 2 allows you to use Docker alongside other virtualization tools like VirtualBox.  
 * **Easier File Access**: WSL 2 lets you seamlessly share files between Windows and Linux, making development smoother.  
-* **No Need for Windows Pro**: Hyper-V requires **Windows 10/11 Pro**, while WSL 2 works on **Windows 10/11 Home** too.  
-
-Additionally, beyond Docker, WSL 2 is particularly useful for developers who need Linux commands and tools on Windows without setting up a full virtual machine.
-
+* **Compatbale with many Windows**: WSL 2 works on **Windows 10/11 Home**.  
 ---
 
-# **2. Check System Requirements**
-Before installing Docker, make sure your computer meets the requirements:
+# **2.System Requirements**
 
 * **Windows 10 (build 19045 or later)** or **Windows 11**.
 * **64-bit processor**.
