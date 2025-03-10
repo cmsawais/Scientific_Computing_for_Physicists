@@ -9,7 +9,7 @@ Since Docker requires **a Linux-based system** to function properly, installing 
 
 While there is another methods that also work well but this guide focuses on **WSL 2** because it offers better compatibility and flexibility for most users even on older version of windows as well.
 
-## **1.1 Why WSL 2? **  
+## 1.1 Why WSL 2? 
 * **Good Performance**: WSL 2 runs with a lightweight virtual machine that is faster and uses fewer resources.   
 * **Compatibility**: WSL 2 allows you to use Docker alongside other virtualization tools like VirtualBox.  
 * **Easier File Access**: WSL 2 lets you seamlessly share files between Windows and Linux, making development smoother.  
