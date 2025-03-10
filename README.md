@@ -1,7 +1,7 @@
 # **Install Docker on AlmaLinux9**
 ---
 
-# **1. Introduction**  
+# 1. Introduction  
 Docker is a powerful tool that allows you to run applications inside **containers**, which are lightweight, portable environments that include everything an application needs to work. This makes software installation and deployment much easier and more reliable.  
 
 Since Docker requires **a Linux-based system** to function properly, installing it on Windows requires setting up a **Linux-compatible environment**. I followed the **WSL 2** method
@@ -86,7 +86,7 @@ If you see the error message `'docker' is not recognized as an internal or exter
 2. **Ensure Docker Desktop is Running:** If you haven't opened Docker Desktop before running Docker commands, the Docker Engine might not be running. Open Docker Desktop and ensure it is properly started. The Docker CLI won't work if the engine isn't running.  
   
 
-3. **Verify Docker Installation Path:** Ensure that Docker's installation path is correctly added to your system's **PATH** environment variable. If the path is missing, the terminal won't recognize the `docker` command. You can add it manually by adding the Docker's path to the **PATH** variable ![image](./images/docker-path.png).
+3. **Verify Docker Installation Path:** Ensure that Docker's installation path is correctly added to your system's **PATH** environment variable. If the path is missing, the terminal won't recognize the `docker` command. You can add it manually by adding the Docker's path to the **PATH** variable 
 
 4. **Check Docker Desktop Settings:** Sometimes, Docker Desktop might not automatically start on boot or might face issues with virtualization settings. Open Docker Desktop and check for any alerts or error messages in the settings.
 
