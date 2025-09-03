@@ -1,0 +1,6 @@
+N=1000000
+expected element value = 7.4
+first 5 = [7.400000, 7.400000, 7.400000, 7.400000, 7.400000]
+last 5  = [7.400000, 7.400000, 7.400000, 7.400000, 7.400000]
+checksum(sum of all elements) = 7400000.00012412
+all_equal = true

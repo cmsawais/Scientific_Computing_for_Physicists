@@ -1,0 +1,7 @@
+The computed sum using for loop came out -0.5, while using gsl-vector-sum and kahan summation algoirthm it came out 0.5.
+Possible Reason: When adding floating-point numbers of very different magnitudes, rounding errors occur because small 
+values can be lost next to very large ones. In the naive for-loop, the +1.0 disappears when added to 1.0e16,
+leading to the wrong final result of -0.5. Using a library function like mean × n applies more numerically 
+stable operations, producing a result closer to the correct 0.5. 
+The Kahan summation algorithm goes further by tracking and compensating for lost precision, recovering 
+the small contributions and yielding the mathematically correct sum

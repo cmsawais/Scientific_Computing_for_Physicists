@@ -1,0 +1,3 @@
+N=10
+expected each C[i,j] = 213.0
+all_equal = True
