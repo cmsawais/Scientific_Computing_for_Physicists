@@ -61,3 +61,7 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+// OutPut on Terminal //
+// Numerical Integral I  = 1.9052374957512166
+// Analytic Solution     = 1.9052386904826757
+// Relative Error        = -6.2707705084097398e-07
